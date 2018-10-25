@@ -1,0 +1,54 @@
+配置thymeleaf：
+所依赖的jar包
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-thymeleaf</artifactId>
+</dependency>
+配置文件：
+#thymeleaf
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
+spring.thymeleaf.mode=HTML5
+spring.thymeleaf.content-type=text/html
+spring.thymeleaf.cache=false
+
+配置mybatis
+所依赖的jar包
+<dependency>
+	<groupId>org.mybatis.spring.boot</groupId>
+	<artifactId>mybatis-spring-boot-starter</artifactId>
+	<version>1.3.2</version>
+</dependency>
+配置文件：
+#mybatis
+mybatis.type-aliases-package=com.huang.miaosha.domain
+mybatis.configuration.map-underscore-to-camel-case=true
+mybatis.configuration.default-fetch-size=100
+mybatis.configuration.default-statement-timeout=3000
+mybatis.mapper-locations=classpath:com/huang/miaosha/dao/*.xml
+
+配置druid数据连接池
+<dependency>
+	<groupId>mysql</groupId>
+	<artifactId>mysql-connector-java</artifactId>
+</dependency>
+<dependency>
+	<groupId>com.alibaba</groupId>
+	<artifactId>druid</artifactId>
+	<version>1.0.5</version>
+</dependency>
+
+
+配置rabbitmq消息中间界
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-amqp</artifactId>
+</dependency>
+
+
+
+
+
+
+
+
